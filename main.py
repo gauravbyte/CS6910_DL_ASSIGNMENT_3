@@ -125,6 +125,7 @@ valid = df_valid.values.tolist()
 test = df_test.values.tolist()
 
 
+
 # %% [code] {"execution":{"iopub.status.busy":"2023-04-27T06:55:54.541071Z","iopub.execute_input":"2023-04-27T06:55:54.541859Z","iopub.status.idle":"2023-04-27T06:55:54.549480Z","shell.execute_reply.started":"2023-04-27T06:55:54.541813Z","shell.execute_reply":"2023-04-27T06:55:54.548301Z"}}
 # working
 # def inputToTensor(line,diction=in_dict,max_size=-1):
