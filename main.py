@@ -333,36 +333,17 @@ def train(model, iterator, optimizer, criterion, clip):
         #     break
         src = data
         trg = target
-
         optimizer.zero_grad()
-        # print("train target shape", trg.shape)
         output = model(src, trg)
-
-        # trg = [trg len, batch size]
-        # output = [trg len, batch size, output dim]
-        # trg = trg.permute(1,0)
-        # output = output.permute(1,0, 2)
-        # print("train target shape", trg.shape)
-        # print("train output shape", output.shape)
         output_dim = output.shape[-1]
         output = output[1:].reshape(-1, output_dim)
         trg = trg[1:].reshape(-1)
-        # print("target shape", trg.shape)
-        # print("output shape", output.shape)
-        # trg = [(trg len - 1) * batch size]
-        # output = [(trg len - 1) * batch size, output dim]
-
         loss = criterion(output, trg)
-
         loss.backward()
-
-        # torch.nn.utils.clip_grad_norm_(model.parameters(), clip)
-        #
         optimizer.step()
-        #
         ls = loss.item()
         epoch_loss += ls
-        print(ls)
+        # print(ls)
     return epoch_loss / len(iterator)
 
 
@@ -376,7 +357,7 @@ def train(model, iterator, optimizer, criterion, clip):
 #
 #     # start_time = time.time()
 #
-#     train_loss = train(model, train_dataloader, optimizer, criterion, CLIP)
+#     train_loss = train_list(model, train_dataloader, optimizer, criterion, CLIP)
 # valid_loss = evaluate(model, valid_iterator, criterion)
 # %%
 N_EPOCHS = 1
