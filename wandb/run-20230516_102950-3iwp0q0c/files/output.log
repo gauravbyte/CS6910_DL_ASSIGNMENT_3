@@ -1,0 +1,49 @@
+
+['c:\\Users\\gaura\\PycharmProjects\\scientificProject', 'c:\\Program Files\\Python311\\python311.zip', 'c:\\Program Files\\Python311\\DLLs', 'c:\\Program Files\\Python311\\Lib', 'c:\\Program Files\\Python311', '', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages\\win32', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages\\win32\\lib', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages\\Pythonwin', 'c:\\Program Files\\Python311\\Lib\\site-packages']
+Executing on cpu
+Running on local
+(51199, 2)
+(4095, 2)
+(4095, 2)
+{'_': 0, '|': 1, '$': 2, 'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9, 'h': 10, 'i': 11, 'j': 12, 'k': 13, 'l': 14, 'm': 15, 'n': 16, 'o': 17, 'p': 18, 'q': 19, 'r': 20, 's': 21, 't': 22, 'u': 23, 'v': 24, 'w': 25, 'x': 26, 'y': 27, 'z': 28}
+ouput char set  {'ऋ', 'ै', 'त', 'ु', 'ख', 'औ', '्', 'छ', 'ल', 'ई', 'ञ', 'म', 'ी', 'श', 'अ', 'घ', 'ग', 'ॅ', 'ऐ', 'ॊ', 'ि', 'न', 'ए', 'ह', 'क', 'ठ', 'ौ', 'ब', 'ज', 'प', 'ृ', 'र', 'झ', 'ण', 'फ', 'ा', 'ू', 'ळ', 'ो', 'भ', 'उ', 'ऽ', 'ः', 'ष', 'े', 'ँ', 'स', 'इ', 'ऑ', 'आ', 'ढ', 'ङ', 'च', 'ड', 'द', 'ट', 'ओ', 'ॉ', 'थ', 'य', 'ऊ', '़', 'ध', 'ं', 'व'}
+ouput char set size 65
+max input length 24
+max output length 20
+max_length 24
+Input Character max 29
+output Character size 68
+Input Character max 29
+output Character size 68
+tensor([ 4, 11, 16,  6, 10, 27,  3])
+किरणकांत
+{'_': 0, '|': 1, '$': 2, 'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9, 'h': 10, 'i': 11, 'j': 12, 'k': 13, 'l': 14, 'm': 15, 'n': 16, 'o': 17, 'p': 18, 'q': 19, 'r': 20, 's': 21, 't': 22, 'u': 23, 'v': 24, 'w': 25, 'x': 26, 'y': 27, 'z': 28}
+tensor([10,  7, 14, 14, 17])
+torch.Size([24, 32])
+torch.Size([24, 32])
+Executing on cpu
+Running on local
+(51199, 2)
+(4095, 2)
+(4095, 2)
+{'_': 0, '|': 1, '$': 2, 'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9, 'h': 10, 'i': 11, 'j': 12, 'k': 13, 'l': 14, 'm': 15, 'n': 16, 'o': 17, 'p': 18, 'q': 19, 'r': 20, 's': 21, 't': 22, 'u': 23, 'v': 24, 'w': 25, 'x': 26, 'y': 27, 'z': 28}
+ouput char set  {'ऋ', 'ै', 'त', 'ु', 'ख', 'औ', '्', 'छ', 'ल', 'ई', 'ञ', 'म', 'ी', 'श', 'अ', 'घ', 'ग', 'ॅ', 'ऐ', 'ॊ', 'ि', 'न', 'ए', 'ह', 'क', 'ठ', 'ौ', 'ब', 'ज', 'प', 'ृ', 'र', 'झ', 'ण', 'फ', 'ा', 'ू', 'ळ', 'ो', 'भ', 'उ', 'ऽ', 'ः', 'ष', 'े', 'ँ', 'स', 'इ', 'ऑ', 'आ', 'ढ', 'ङ', 'च', 'ड', 'द', 'ट', 'ओ', 'ॉ', 'थ', 'य', 'ऊ', '़', 'ध', 'ं', 'व'}
+ouput char set size 65
+max input length 24
+max output length 20
+max_length 24
+Input Character max 29
+output Character size 68
+Input Character max 29
+output Character size 68
+tensor([ 4, 11, 16,  6, 10, 27,  3])
+किरणकांत
+{'_': 0, '|': 1, '$': 2, 'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9, 'h': 10, 'i': 11, 'j': 12, 'k': 13, 'l': 14, 'm': 15, 'n': 16, 'o': 17, 'p': 18, 'q': 19, 'r': 20, 's': 21, 't': 22, 'u': 23, 'v': 24, 'w': 25, 'x': 26, 'y': 27, 'z': 28}
+tensor([10,  7, 14, 14, 17])
+torch.Size([24, 32])
+torch.Size([24, 32])
+	Train Loss: 1.455 | Train Acc: 0.00%
+	 Val. Loss: 0.987 |  Val. Acc: 0.00%
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Create sweep with ID: hh3vahjz
+Sweep URL: https://wandb.ai/cs22m045/aksharantar_without_attention_1/sweeps/hh3vahjz

@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 128
+bidirectional:
+  value: false
+cell_type:
+  value: GRU
+dec_dropout:
+  value: 0.4
+embedding_size:
+  value: 512
+enc_dropout:
+  value: 0.4
+hidden_size:
+  value: 256
+learning_rate:
+  value: 0.1
+num_epochs:
+  value: 15
+num_layers:
+  value: 1

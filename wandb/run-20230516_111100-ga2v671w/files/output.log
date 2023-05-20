@@ -1,0 +1,43 @@
+Executing on cpu
+Running on local
+(51199, 2)
+(4095, 2)
+(4095, 2)
+{'_': 0, '|': 1, '$': 2, 'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9, 'h': 10, 'i': 11, 'j': 12, 'k': 13, 'l': 14, 'm': 15, 'n': 16, 'o': 17, 'p': 18, 'q': 19, 'r': 20, 's': 21, 't': 22, 'u': 23, 'v': 24, 'w': 25, 'x': 26, 'y': 27, 'z': 28}
+ouput char set  {'्', 'त', 'े', 'अ', 'ड', '़', 'थ', 'ण', 'ह', 'ठ', 'ष', 'म', 'ब', 'न', 'ग', 'श', 'ौ', 'ट', 'ि', 'छ', 'ं', 'ॅ', 'र', 'ध', 'ञ', 'ऋ', 'ऑ', 'य', 'ँ', 'ज', 'स', 'उ', 'औ', 'ङ', 'ढ', 'ऊ', 'ऐ', 'ळ', 'ई', 'फ', 'आ', 'ॊ', 'ी', 'द', 'व', 'ै', 'झ', 'घ', 'इ', 'ः', 'ॉ', 'प', 'ख', 'ृ', 'ू', 'ु', 'ल', 'ए', 'च', 'क', 'ऽ', 'भ', 'ो', 'ओ', 'ा'}
+ouput char set size 65
+max input length 24
+max output length 20
+max_length 24
+Input Character max 29
+output Character size 68
+Input Character max 29
+output Character size 68
+tensor([ 4, 11, 16,  6, 10, 27,  3])
+किरणकांत
+{'_': 0, '|': 1, '$': 2, 'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9, 'h': 10, 'i': 11, 'j': 12, 'k': 13, 'l': 14, 'm': 15, 'n': 16, 'o': 17, 'p': 18, 'q': 19, 'r': 20, 's': 21, 't': 22, 'u': 23, 'v': 24, 'w': 25, 'x': 26, 'y': 27, 'z': 28}
+tensor([10,  7, 14, 14, 17])
+['c:\\Users\\gaura\\PycharmProjects\\scientificProject', 'c:\\Program Files\\Python311\\python311.zip', 'c:\\Program Files\\Python311\\DLLs', 'c:\\Program Files\\Python311\\Lib', 'c:\\Program Files\\Python311', '', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages\\win32', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages\\win32\\lib', 'C:\\Users\\gaura\\AppData\\Roaming\\Python\\Python311\\site-packages\\Pythonwin', 'c:\\Program Files\\Python311\\Lib\\site-packages']
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: wandb in c:\users\gaura\appdata\roaming\python\python311\site-packages (0.14.0)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (8.1.3)
+Requirement already satisfied: GitPython!=3.1.29,>=1.0.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (3.1.31)
+Requirement already satisfied: requests<3,>=2.0.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (2.28.2)
+Requirement already satisfied: psutil>=5.0.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (5.9.4)
+Requirement already satisfied: sentry-sdk>=1.0.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (1.17.0)
+Requirement already satisfied: docker-pycreds>=0.4.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (0.4.0)
+Requirement already satisfied: PyYAML in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (6.0)
+Requirement already satisfied: pathtools in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (0.1.2)
+Requirement already satisfied: setproctitle in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (1.3.2)
+Requirement already satisfied: setuptools in c:\program files\python311\lib\site-packages (from wandb) (65.5.0)
+Requirement already satisfied: appdirs>=1.4.3 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (1.4.4)
+Requirement already satisfied: protobuf!=4.21.0,<5,>=3.19.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from wandb) (4.22.1)
+Requirement already satisfied: colorama in c:\users\gaura\appdata\roaming\python\python311\site-packages (from Click!=8.0.0,>=7.0->wandb) (0.4.6)
+Requirement already satisfied: six>=1.4.0 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from docker-pycreds>=0.4.0->wandb) (1.16.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from GitPython!=3.1.29,>=1.0.0->wandb) (4.0.10)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from requests<3,>=2.0.0->wandb) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from requests<3,>=2.0.0->wandb) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from requests<3,>=2.0.0->wandb) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from requests<3,>=2.0.0->wandb) (2022.12.7)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\gaura\appdata\roaming\python\python311\site-packages (from gitdb<5,>=4.0.1->GitPython!=3.1.29,>=1.0.0->wandb) (5.0.0)
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

@@ -1,0 +1,16 @@
+wandb_version: 1
+
+batch_size:
+  value: 32
+bidirectional:
+  value: true
+cell_type:
+  value: LSTM
+dropout:
+  value: 0.3
+embedding_size:
+  value: 256
+hidden_size:
+  value: 128
+num_layers:
+  value: 3

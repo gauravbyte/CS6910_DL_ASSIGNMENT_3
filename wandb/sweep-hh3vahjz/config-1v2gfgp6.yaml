@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 128
+bidirectional:
+  value: false
+cell_type:
+  value: RNN
+dec_dropout:
+  value: 0.5
+embedding_size:
+  value: 256
+enc_dropout:
+  value: 0.5
+hidden_size:
+  value: 512
+learning_rate:
+  value: 0.1
+num_epochs:
+  value: 20
+num_layers:
+  value: 1

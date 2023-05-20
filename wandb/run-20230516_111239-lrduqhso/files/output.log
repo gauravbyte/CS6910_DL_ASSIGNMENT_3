@@ -1,0 +1,46 @@
+C:\Users\gaura\AppData\Roaming\Python\Python311\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+C:\Users\gaura\AppData\Roaming\Python\Python311\site-packages\torch\nn\modules\rnn.py:71: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.4 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+	Train Loss: 1.539 | Train Acc: 0.00%
+	 Val. Loss: 1.246 |  Val. Acc: 0.00%
+	Train Loss: 1.235 | Train Acc: 0.00%
+	 Val. Loss: 1.015 |  Val. Acc: 0.00%
+	Train Loss: 1.140 | Train Acc: 0.00%
+	 Val. Loss: 0.980 |  Val. Acc: 0.00%
+	Train Loss: 1.070 | Train Acc: 0.05%
+	 Val. Loss: 0.943 |  Val. Acc: 0.39%
+	Train Loss: 1.100 | Train Acc: 0.05%
+	 Val. Loss: 0.923 |  Val. Acc: 0.00%
+	Train Loss: 1.045 | Train Acc: 0.00%
+	 Val. Loss: 0.899 |  Val. Acc: 0.39%
+	Train Loss: 1.002 | Train Acc: 0.10%
+	 Val. Loss: 0.835 |  Val. Acc: 0.39%
+	Train Loss: 0.965 | Train Acc: 0.10%
+	 Val. Loss: 1.006 |  Val. Acc: 0.00%
+	Train Loss: 1.013 | Train Acc: 0.10%
+	 Val. Loss: 0.844 |  Val. Acc: 0.00%
+	Train Loss: 0.983 | Train Acc: 0.10%
+	 Val. Loss: 0.852 |  Val. Acc: 0.00%
+	Train Loss: 0.969 | Train Acc: 0.00%
+	 Val. Loss: 0.802 |  Val. Acc: 0.00%
+	Train Loss: 0.978 | Train Acc: 0.00%
+	 Val. Loss: 0.976 |  Val. Acc: 0.00%
+	Train Loss: 0.946 | Train Acc: 0.05%
+	 Val. Loss: 0.788 |  Val. Acc: 0.00%
+	Train Loss: 0.945 | Train Acc: 0.05%
+	 Val. Loss: 0.976 |  Val. Acc: 0.39%
+	Train Loss: 0.919 | Train Acc: 0.24%
+	 Val. Loss: 0.929 |  Val. Acc: 0.00%
+	Train Loss: 0.899 | Train Acc: 0.20%
+	 Val. Loss: 0.795 |  Val. Acc: 0.00%
+	Train Loss: 0.921 | Train Acc: 0.10%
+	 Val. Loss: 0.865 |  Val. Acc: 0.00%
+	Train Loss: 0.902 | Train Acc: 0.24%
+	 Val. Loss: 0.935 |  Val. Acc: 0.00%
+	Train Loss: 0.895 | Train Acc: 0.05%
+	 Val. Loss: 0.861 |  Val. Acc: 0.00%
+	Train Loss: 0.915 | Train Acc: 0.20%
+	 Val. Loss: 0.849 |  Val. Acc: 0.00%
+ct_GRU_bi_True_nl_1_bs_64_es_512_hs_256_endo_0.2_decdo_0.4_ne_20
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.

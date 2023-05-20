@@ -1,0 +1,41 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.11.2",
+    "heartbeatAt": "2023-05-16T03:07:08.696243",
+    "startedAt": "2023-05-16T03:07:07.539524",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/gauravbyte/CS6910_DL_ASSIGNMENT_3.git",
+        "commit": "ab8cda42f8f3de1264bce8140f56c24c94e88915"
+    },
+    "email": "gauravbyte@gmail.com",
+    "root": "C:/Users/gaura/PycharmProjects/scientificProject",
+    "host": "windows_PC",
+    "username": "gaura",
+    "executable": "c:\\Program Files\\Python311\\python.exe",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 1190.0,
+        "min": 0.0,
+        "max": 1190.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1190.0,
+            "min": 0.0,
+            "max": 1190.0
+        }
+    ],
+    "disk": {
+        "total": 194.58691024780273,
+        "used": 145.79599380493164
+    },
+    "memory": {
+        "total": 7.772785186767578
+    }
+}
