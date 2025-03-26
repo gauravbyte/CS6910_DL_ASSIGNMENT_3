@@ -53,7 +53,22 @@ Breakdown:
 Vm + 8k² + Vk
 ```
 
+![CleanShot-03-27 at 00 31 132025CS22M045 CS6910 - Assignment 3  Deep Learning CS6910 Assignment 3 report – Weights   BiasesGoogle Chrome](https://github.com/user-attachments/assets/05a0297f-867f-4e38-b8da-d56f559827e0)
+
 ---
+![CleanShot-03-27 at 00 31 582025CS22M045 CS6910 - Assignment 3  Deep Learning CS6910 Assignment 3 report – Weights   BiasesGoogle Chrome](https://github.com/user-attachments/assets/4dd6c11d-7551-475b-855e-772e81399535)
+
+![CleanShot-03-27 at 00 32 402025CS22M045 CS6910 - Assignment 3  Deep Learning CS6910 Assignment 3 report – Weights   BiasesGoogle Chrome](https://github.com/user-attachments/assets/55279210-c154-4798-8ea4-d0f47033aa33)
+
+
+![f0037f1a](https://github.com/user-attachments/assets/f9334ca0-44f0-453b-9722-6bff53a9bb06)
+
+
+![ebd9111c](https://github.com/user-attachments/assets/99e85f18-fef1-41af-8591-d6071e9db3d4)
+
+![6467443e](https://github.com/user-attachments/assets/c8bebbbc-7415-4189-98a7-08f130ad21ba)
+
+
 
 ## License
 
