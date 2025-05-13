@@ -1,75 +1,119 @@
-# Seq2Seq RNN Model for Character-Level Transliteration (Latin → Devanagari)
+# 🔡 Seq2Seq RNN Model for Character-Level Transliteration (Latin → Devanagari)
 
-This project implements a flexible RNN-based sequence-to-sequence (seq2seq) model for character-level transliteration from Latin characters to Devanagari script.
-
-## Architecture
-
-The model contains the following components:
-
-1. **Input Layer**: Character embedding layer.
-2. **Encoder**: An RNN (can be RNN, LSTM, or GRU) that encodes the input sequence.
-3. **Decoder**: Another RNN that decodes the representation into the target sequence, one character at a time, using the final hidden state of the encoder as input.
-
-The model supports customization of:
-- Embedding size (`m`)
-- Hidden state size (`k`)
-- Number of layers in encoder and decoder
-- Type of recurrent cell (`RNN`, `LSTM`, or `GRU`)
+This project implements a customizable **sequence-to-sequence (seq2seq)** deep learning model to transliterate words from Latin script to Devanagari at the character level using RNN-based architectures.
 
 ---
 
-## (a) Total Number of Computations
+## 🚀 Overview
 
+The model translates Latin-script inputs (e.g., "namaste") into their Devanagari equivalents (e.g., "नमस्ते") using a character-level encoder-decoder architecture. It supports various configurations of RNNs including standard RNN, GRU, and LSTM cells.
+
+---
+
+## 🧠 Model Architecture
+
+### Components:
+- **Input Layer**: Character embeddings for Latin characters.
+- **Encoder**: RNN-based module that processes the input sequence.
+- **Decoder**: RNN-based module that generates the Devanagari output, character by character.
+- **Output Layer**: Fully connected layer projecting to target character probabilities.
+
+### Supported Customizations:
+- Embedding size `m`
+- Hidden state size `k`
+- Number of layers in encoder/decoder
+- RNN cell type: `RNN`, `GRU`, or `LSTM`
+
+---
+
+## ⚙️ Computational Analysis
+
+### (a) Total Number of Computations
 Let:
 - `T` = length of input/output sequence  
-- `m` = input embedding size  
-- `k` = hidden state size  
-- `V` = vocabulary size (same for source and target languages)
+- `m` = embedding size  
+- `k` = hidden size  
+- `V` = vocabulary size (same for input and output)
 
-Assuming:
-- 1 layer for encoder and decoder
-- Same sequence length `T` for both encoder and decoder
-- BPTT (Backpropagation Through Time)
+Assumptions:
+- 1-layer encoder and decoder
+- BPTT used during training
 
-**Total number of computations**:  
+**Total operations per forward-backward pass**:
 ```
 O((2T + 1)mk + 2Tk² + 2Tk + (2T + 1)Vm + (T + 1)Vk + (T + 1)V)
 ```
 
 ---
 
-## (b) Total Number of Parameters
+### (b) Total Number of Parameters
 
-Breakdown:
-- **Input Embedding Layer**: `Vm` parameters
-- **Encoder RNN (1 layer)**: `4k²` parameters
-- **Decoder RNN (1 layer)**: `4k²` parameters
-- **Output Layer**: `Vk` parameters
+| Component            | Parameters       |
+|----------------------|------------------|
+| Input Embedding      | `V × m`          |
+| Encoder (1-layer LSTM)| `4 × (k² + k × m)` |
+| Decoder (1-layer LSTM)| `4 × (k² + k × k)` |
+| Output Layer         | `V × k`          |
 
-> (Note: For LSTM, each layer has 4 sets of weights per gate. Adjust if using plain RNN or GRU.)
+> For LSTM, each layer includes 4 weight matrices per gate (input, forget, cell, output). Adjust accordingly if using GRU or vanilla RNN.
 
-**Total number of parameters**:
+**Total parameters (approx):**
 ```
 Vm + 8k² + Vk
 ```
 
-![CleanShot-03-27 at 00 31 132025CS22M045 CS6910 - Assignment 3  Deep Learning CS6910 Assignment 3 report – Weights   BiasesGoogle Chrome](https://github.com/user-attachments/assets/05a0297f-867f-4e38-b8da-d56f559827e0)
+---
+
+## 📊 Visualizations
+
+> Example training logs and attention visualizations.
+
+![Training Loss and Accuracy](https://github.com/user-attachments/assets/05a0297f-867f-4e38-b8da-d56f559827e0)
+![Attention Heatmap](https://github.com/user-attachments/assets/4dd6c11d-7551-475b-855e-772e81399535)
+![Sample Output 1](https://github.com/user-attachments/assets/55279210-c154-4798-8ea4-d0f47033aa33)
+![Sample Output 2](https://github.com/user-attachments/assets/f9334ca0-44f0-453b-9722-6bff53a9bb06)
+![Sample Output 3](https://github.com/user-attachments/assets/99e85f18-fef1-41af-8591-d6071e9db3d4)
+![Sample Output 4](https://github.com/user-attachments/assets/c8bebbbc-7415-4189-98a7-08f130ad21ba)
 
 ---
-![CleanShot-03-27 at 00 31 582025CS22M045 CS6910 - Assignment 3  Deep Learning CS6910 Assignment 3 report – Weights   BiasesGoogle Chrome](https://github.com/user-attachments/assets/4dd6c11d-7551-475b-855e-772e81399535)
 
-![CleanShot-03-27 at 00 32 402025CS22M045 CS6910 - Assignment 3  Deep Learning CS6910 Assignment 3 report – Weights   BiasesGoogle Chrome](https://github.com/user-attachments/assets/55279210-c154-4798-8ea4-d0f47033aa33)
+## 📁 File Structure
 
+```
+.
+├── data/                   # Preprocessed datasets
+├── model/                  # Encoder, decoder, training script
+├── utils/                  # Helper functions for vocab, batching, metrics
+├── plots/                  # Training plots, attention maps
+├── train.py                # Main training script
+├── evaluate.py             # Evaluation logic
+└── README.md               # Project documentation
+```
 
-![f0037f1a](https://github.com/user-attachments/assets/f9334ca0-44f0-453b-9722-6bff53a9bb06)
+---
 
+## 🧪 Future Work
 
-![ebd9111c](https://github.com/user-attachments/assets/99e85f18-fef1-41af-8591-d6071e9db3d4)
+- Add attention mechanism (Bahdanau/Luong)
+- Integrate beam search decoding
+- Expand to multilingual transliteration
 
-![6467443e](https://github.com/user-attachments/assets/c8bebbbc-7415-4189-98a7-08f130ad21ba)
+---
 
+## 📜 License
 
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+Feel free to use, modify, and distribute it!
 
-## License
+---
 
-MIT License
+## 🙌 Acknowledgments
+
+This project was developed as part of CS6910 - Deep Learning at IIT Madras. Inspired by the effectiveness of sequence-to-sequence learning for NLP tasks.
+
+---
+
+## ✨ Example
+
+**Input**: `namaste`  
+**Output**: `नमस्ते`
